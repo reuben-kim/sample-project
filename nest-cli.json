@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "monorepo": true,
+  "root": ".",
+  "projects": {
+    "sample": {
+      "type": "application",
+      "entryFile": "src/apps/sample/main",
+      "compilerOptions": {
+        "tsConfigPath": "src/apps/sample/tsconfig.app.json"
+      }
+    }
+  }
+}

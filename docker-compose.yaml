@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  mysql-sample:
+    image: mysql:8.0
+    container_name: mysql_sample
+    tty: true
+    restart: always
+    environment:
+      - MYSQL_ROOT_PASSWORD=nestjs
+      - MYSQL_DATABASE=nestjs_practice
+    ports:
+      - 33068:3306
+    volumes:
+      - ./volume/mysql/data/db:/var/lib/mysql
